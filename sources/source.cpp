@@ -13,7 +13,7 @@ class talk_to_client {
   boost::asio::ip::tcp::socket socket_;
 
  public:
-  explicit talk_to_client()
+  talk_to_client()
       : login_time_(std::chrono::system_clock::now()), socket_(service_) {}
 
   std::string username() { return username_; }
